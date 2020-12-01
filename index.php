@@ -15,7 +15,7 @@
 			<img src='assets/img/logo.png' />
 			</center'
 			<div class='form''
-			<form class='login-form'  onsubmit='return validateForm()' action='data/login.php' method='POST'>
+			<form class='login-form' action='data/login.php' method='POST'>
 			<input type='text' name='uid' 
 			placeholder='Username' />
 			<input type='password' name='pwd' 
