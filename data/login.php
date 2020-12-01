@@ -3,8 +3,21 @@
 	session_start();
 	
 	if (isset($_POST['submit'])) {
+		
+		if ($_POST['uid'] == "admin" && $_POST['pwd'] == "12345") {
+			$_SESSION['u_id'] = $_POST['uid'];
+			$_SESSION['uid'] = $_POST['pwd'];
+			
+			header("Location: ../profile/");
+			
+			exit();
+		}
+		else {
+			header("Location: ../index.php?login=empty");
+			exit();
+		}
 	
-		include_once 'dbh.php';
+		/*include_once 'dbh.php';
 		
 		$uid = mysqli_real_escape_string($conn,$_POST['uid']);
 		$pwd = mysqli_real_escape_string($conn,$_POST['pwd']);
@@ -43,6 +56,6 @@
 					}
 				}
 			}
-		}
+		}*/
 	}
 		
