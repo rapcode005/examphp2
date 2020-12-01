@@ -9,7 +9,7 @@
 		
 		include 'headerhomeadmin.php';
 		
-		echo "
+			echo "
 			<div class='login-page'>
 			<center>
 			<img src='assets/img/logo.png' />
