@@ -128,7 +128,7 @@
 						<span class="modalWh" aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<form action="../profile/data/addProfile.php" method="post" id="profileForm">
+				<form action="data/addProfile.php" method="post" id="profileForm">
 					<div class="modal-body">
 						
 							<div class="input-group input-group-sm mb-3">
