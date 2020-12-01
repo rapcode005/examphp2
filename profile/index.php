@@ -28,13 +28,13 @@
 								class="form-control" 
 								id="name"
 								name="name"
-								placeholder="Salesrep Name">
+								placeholder="Salesrep Name" required>
 							</div>
 							<div class="input-group input-group-sm mb-3">
 								<input class="form-control" aria-label="Small" id="commission"
 								placeholder="Set Commission Percentage"4
 								name="commission"
-								aria-describedby="percent"></input>
+								aria-describedby="percent" required></input>
 								<div class="input-group-append">
 									<span class="input-group-text" id="percent">%</span>
 								</div>
@@ -43,13 +43,13 @@
 								<input type="text" class="form-control" 
 								placeholder="Tax Rate"
 								name="taxrate"
-								id="taxrate">
+								id="taxrate" required>
 							</div>
 							<div class="input-group input-group-sm mb-3">
 								<input type="text" class="form-control" 
 								placeholder="Bonuses"
 								name="bonus"
-								id="bonus">
+								id="bonus" required>
 							</div>
 					</div>
 					<div class="modal-footer">
