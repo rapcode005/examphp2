@@ -19,21 +19,25 @@
 		</thead>
 		<tbody>
 			<?php
-				$sql = "Select name,com,tax,bonus from Profile";
-						
-				$result = mysqli_query($conn, $sql); 
+				try {
+					$sql = "Select name,com,tax,bonus from Profile";
 
-				while ($row = mysqli_fetch_assoc($result)) { ?>
+					$result = mysqli_query($conn, $sql); 
+
+					while ($row = mysqli_fetch_assoc($result)) { ?>
+
+						<tr>
+							<td><?= $row['name'] ?></td>
+							<td><?= $row['com'] ?></td>
+							<td><?= $row['tax'] ?></td>
+							<td><?= $row['bonus'] ?></td>
+						<tr>
+					<?php }
 				
-					<tr>
-						<td><?= $row['name'] ?></td>
-						<td><?= $row['com'] ?></td>
-						<td><?= $row['tax'] ?></td>
-						<td><?= $row['bonus'] ?></td>
-					<tr>
-				<?php }
-				
-				$conn->close();
+					$conn->close();
+				}
+				catch (Exception $e) {
+				}
 			?>
 		</tbody>
 	</table>
