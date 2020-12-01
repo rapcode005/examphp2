@@ -14,8 +14,10 @@
 				<img src='../assets/img/logo.png' />
 			</div>
 			<div class="col-6 d-flex justify-content-center">
-				<p>Onlineinsure payroll system is application for
+				<center>
+				<p><b>Onlineinsure payroll system</b> is application for
 				computing and summarize payrroll for Sales Reps.</p>
+				</center>
 			</div>
 		</div>
 	</div>

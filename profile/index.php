@@ -8,8 +8,8 @@
 ?>
 <br><br>
 <div class="container mt-5">
-	<table class="table table-striped">
-		<thead>
+	<table class="table">
+		<thead class="thead-dark">
 			<tr>
 				<th scope="col">Sales Rep</th>
 				<th scope="col">Commission Percentage</th>
