@@ -22,7 +22,6 @@
 						aria-label="salesrep" onchange="onselectSalesRep()" >
 							<option selected value="">Select Sales Reps</option>
 							<?php
-								try {
 									$sql = "Select id,name,com,tax,bonus from Profile";
 
 									$result = mysqli_query($conn, $sql); 
@@ -34,9 +33,6 @@
 									<?php }
 								
 									$conn->close(); 
-								}
-								catch (Exception $e) {
-								}
 							?>
 							
 						</select>
