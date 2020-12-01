@@ -23,20 +23,19 @@
 							<option selected value="">Select Sales Reps</option>
 							<?php
 								try {
-								$sql = "Select id,name,com,tax,bonus from Profile";
-								
-								$result = mysqli_query($conn, $sql); 
+									$sql = "Select id,name,com,tax,bonus from Profile";
 
-								while ($row = mysqli_fetch_assoc($result)) { ?>
-								
-									<option value="<?= $row['id'] ?>-<?= $row['bonus'] ?>-<?= $row['com'] ?>"><?= $row['name'] ?></option>
-									
-								<?php }
+									$result = mysqli_query($conn, $sql); 
+
+									while ($row = mysqli_fetch_assoc($result)) { ?>
+
+										<option value="<?= $row['id'] ?>-<?= $row['bonus'] ?>-<?= $row['com'] ?>"><?= $row['name'] ?></option>
+
+									<?php }
 								
 									$conn->close(); 
 								}
 								catch (Exception $e) {
-								
 								}
 							?>
 							
