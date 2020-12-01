@@ -8,7 +8,17 @@
 ?>
 <br><br>
 <div class="container mt-5">
-	
+	<div class="container h-100">
+		<div class="row h-100 justify-content-center align-items-center">
+			<div class="col-6 d-flex justify-content-center">
+				<img src='../assets/img/logo.png' />
+			</div>
+			<div class="col-6 d-flex justify-content-center">
+				<p>Onlineinsure payroll system is application for
+				computing and summarize payrroll for Sales Reps.</p>
+			</div>
+		</div>
+	</div>
 	<! -- Popup --!>
 	<div class="modal fade" id="salesrepProfile" tabindex="-1" role="dialog" 
 		aria-labelledby="salesrepProfileLabel" 

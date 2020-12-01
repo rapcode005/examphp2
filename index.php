@@ -3,7 +3,7 @@
 	session_start();
 	
 	if(isset($_SESSION['u_id'])) {
-		header("Location: profile/");
+		header("Location: home/");
 	}
 	else {
 		

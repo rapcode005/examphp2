@@ -8,7 +8,7 @@
 			$_SESSION['u_id'] = $_POST['uid'];
 			$_SESSION['uid'] = $_POST['pwd'];
 			
-			header("Location: ../profile/");
+			header("Location: ../home");
 			
 			exit();
 		}
