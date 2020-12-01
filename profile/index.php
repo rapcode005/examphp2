@@ -8,6 +8,35 @@
 ?>
 <br><br>
 <div class="container mt-5">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th scope="col">Sales Rep</th>
+				<th scope="col">Commission Percentage</th>
+				<th scope="col">Tax Rate</th>
+				<th scope="col">Bonuses</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php
+				$sql = "Select name,com,tax,bonus from Profile";
+						
+				$result = mysqli_query($conn, $sql); 
+
+				while ($row = mysqli_fetch_assoc($result)) { ?>
+				
+					<tr>
+						<td><?= $row['name'] ?></td>
+						<td><?= $row['com'] ?></td>
+						<td><?= $row['tax'] ?></td>
+						<td><?= $row['bonus'] ?></td>
+					<tr>
+				<?php }
+				
+				$conn->close();
+			?>
+		</tbody>
+	</table>
 	<! -- Popup --!>
 	<div class="modal fade" id="salesrepProfile" tabindex="-1" role="dialog" 
 		aria-labelledby="salesrepProfileLabel" 
